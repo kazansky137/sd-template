@@ -14,7 +14,7 @@ setup:
 
 install:
 	@if [ "${VIRTUAL_ENV}" = "" ]; then echo Not inside venv; exit 2; fi
-	-@[ ! -f requirements.txt ] && echo "pylint\npytest" > requirements.txt
+	-@[ ! -f requirements.txt ] && echo "pycodestyle\npylint\npytest" > requirements.txt
 	@cat requirements.txt
 	@pip install --upgrade pip
 	@pip install -r requirements.txt
